@@ -13,10 +13,10 @@
             <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                     <children>
-                        <Button fx:id="studentButton" layoutX="11.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToStudent" text="Öğrenci" />
-                        <Button fx:id="staffButton" layoutX="94.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToStaff" text="Personel" />
-                        <Button fx:id="departmentButton" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToDepartment" text="Departman" />
-                        <Button fx:id="closeButton" layoutX="936.0" layoutY="30.0" mnemonicParsing="false" onAction="#close" text="Kapat" />
+                        <Button fx:id="studentButton" layoutX="11.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStudent" text="Öğrenci" />
+                        <Button fx:id="staffButton" layoutX="94.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStaff" text="Personel" />
+                        <Button fx:id="departmentButton" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToDepartment" text="Departman" />
+                        <Button fx:id="closeButton" layoutX="936.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnClose" text="Kapat" />
                     </children>
                 </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="318.0">

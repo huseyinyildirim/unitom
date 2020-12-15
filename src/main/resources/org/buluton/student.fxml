@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.buluton.StudentController">
    <children>
@@ -13,10 +9,10 @@
          <items>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Button fx:id="studentButton" layoutX="11.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToStudent" text="Öğrenci" />
-                  <Button fx:id="staffButton" layoutX="94.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToStaff" text="Personel" />
-                  <Button fx:id="departmentButton" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToDepartment" text="Departman" />
-                  <Button fx:id="closeButton" layoutX="936.0" layoutY="30.0" mnemonicParsing="false" onAction="#close" text="Kapat" />
+                  <Button fx:id="studentButton" layoutX="11.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStudent" text="Öğrenci" />
+                  <Button fx:id="staffButton" layoutX="94.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStaff" text="Personel" />
+                  <Button fx:id="departmentButton" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToDepartment" text="Departman" />
+                  <Button fx:id="closeButton" layoutX="936.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnClose" text="Kapat" />
                </children>
             </AnchorPane>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="318.0">
@@ -27,7 +23,10 @@
                         <TableColumn prefWidth="75.0" text="C2" />
                      </columns>
                   </TableView>
-               </children></AnchorPane>
+                  <Label layoutX="510.0" layoutY="11.0" text="Öğrenci" />
+                  <TextField layoutX="510" layoutY="21" fx:id="txtName"></TextField>
+               </children>
+            </AnchorPane>
          </items>
       </SplitPane>
    </children>
