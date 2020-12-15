@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.buluton.StudentController">
    <children>
@@ -9,10 +10,10 @@
          <items>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Button fx:id="studentButton" layoutX="11.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStudent" text="Öğrenci" />
-                  <Button fx:id="staffButton" layoutX="94.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStaff" text="Personel" />
-                  <Button fx:id="departmentButton" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToDepartment" text="Departman" />
-                  <Button fx:id="closeButton" layoutX="936.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnClose" text="Kapat" />
+                  <Button fx:id="btnStudent" layoutX="11.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStudent" text="Öğrenci" />
+                  <Button fx:id="btnStaff" layoutX="94.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToStaff" text="Personel" />
+                  <Button fx:id="btnDepartment" layoutX="181.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnSwitchToDepartment" text="Departman" />
+                  <Button fx:id="btnClose" layoutX="936.0" layoutY="30.0" mnemonicParsing="false" onAction="#btnClose" text="Kapat" />
                </children>
             </AnchorPane>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="318.0">
@@ -23,8 +24,21 @@
                         <TableColumn prefWidth="75.0" text="C2" />
                      </columns>
                   </TableView>
-                  <Label layoutX="510.0" layoutY="11.0" text="Öğrenci" />
-                  <TextField layoutX="510" layoutY="21" fx:id="txtName"></TextField>
+                  <Label layoutX="510.0" layoutY="11.0" text="Öğrenci İşleri">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="510.0" layoutY="61.0" text="Bölümü" />
+                  <Label layoutX="510.0" layoutY="98.0" text="Öğrenci No" />
+                  <Label layoutX="510.0" layoutY="173.0" text="Soyadı" />
+                  <Label layoutX="510.0" layoutY="136.0" text="Adı" />
+                  <TextField fx:id="txtStudentNo" layoutX="593.0" layoutY="168.0" />
+                  <TextField fx:id="txtName" layoutX="593.0" layoutY="131.0" />
+                  <TextField fx:id="txtSurname" layoutX="592.0" layoutY="93.0" />
+                  <ComboBox fx:id="cbDepartment" layoutX="592.0" layoutY="56.0" prefWidth="150.0" />
+                  <Button layoutX="656.0" layoutY="464.0" mnemonicParsing="false" text="Sil" fx:id="btnDelete" />
+                  <Button layoutX="579.0" layoutY="464.0" mnemonicParsing="false" text="Güncelle" fx:id="btnUpdate" />
+                  <Button layoutX="511.0" layoutY="464.0" mnemonicParsing="false" text="Kaydet" fx:id="btnSave" />
                </children>
             </AnchorPane>
          </items>

@@ -1,10 +1,20 @@
 package org.buluton;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
 public class DepartmentController {
+
+    @FXML
+    private Button btnStudent, btnStaff, btnDepartment;
+
+    @FXML
+    private TextField txtName;
+    @FXML
+    private Button btnUpdate, btnSave, btnDelete;
 
     @FXML
     private void btnSwitchToStudent() throws IOException {
