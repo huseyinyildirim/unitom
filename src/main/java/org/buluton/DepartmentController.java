@@ -20,4 +20,9 @@ public class DepartmentController {
     private void switchToDepartment() throws IOException {
         App.setRoot("department");
     }
+
+    @FXML
+    private void close() throws IOException {
+        System.exit(0);
+    }
 }
