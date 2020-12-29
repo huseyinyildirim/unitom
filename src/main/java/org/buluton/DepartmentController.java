@@ -14,7 +14,7 @@ public class DepartmentController {
     @FXML
     private TextField txtName;
     @FXML
-    private Button btnUpdate, btnSave, btnDelete;
+    private Button btnUpdate, btnSave, btnDelete, btnClear;
 
     @FXML
     private void btnSwitchToStudent() throws IOException {
@@ -34,5 +34,10 @@ public class DepartmentController {
     @FXML
     private void btnClose() throws IOException {
         System.exit(0);
+    }
+
+    @FXML
+    private void btnClear() throws IOException {
+        txtName.setText("");
     }
 }

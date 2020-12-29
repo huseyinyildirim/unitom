@@ -37,6 +37,7 @@
                         <Button fx:id="btnDelete" layoutX="656.0" layoutY="464.0" mnemonicParsing="false" text="Sil" />
                         <Button fx:id="btnUpdate" layoutX="579.0" layoutY="464.0" mnemonicParsing="false" text="Güncelle" />
                         <Button fx:id="btnSave" layoutX="511.0" layoutY="464.0" mnemonicParsing="false" text="Kaydet" />
+                        <Button fx:id="btnClear" layoutX="928.0" layoutY="464.0" mnemonicParsing="false" text="Temizle" />
                     </children>
                 </AnchorPane>
             </items>

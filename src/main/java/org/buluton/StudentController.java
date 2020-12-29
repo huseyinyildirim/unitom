@@ -1,10 +1,11 @@
 package org.buluton;
 
-import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+
+import java.io.IOException;
 
 public class StudentController {
 
@@ -16,7 +17,7 @@ public class StudentController {
     @FXML
     private TextField txtStudentNo, txtName, txtSurname;
     @FXML
-    private Button btnUpdate, btnSave, btnDelete;
+    private Button btnUpdate, btnSave, btnDelete, btnClear;
 
     @FXML
     private void btnSwitchToStudent() throws IOException {
@@ -36,5 +37,12 @@ public class StudentController {
     @FXML
     private void btnClose() throws IOException {
         System.exit(0);
+    }
+
+    @FXML
+    private void btnClear() throws IOException {
+        txtStudentNo.setText("");
+        txtName.setText("");
+        txtSurname.setText("");
     }
 }
