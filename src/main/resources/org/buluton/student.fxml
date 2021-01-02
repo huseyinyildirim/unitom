@@ -18,10 +18,13 @@
             </AnchorPane>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="318.0">
                <children>
-                  <TableView prefHeight="503.0" prefWidth="500.0">
+                  <TableView fx:id="tableList" onMouseClicked="#tableClick" prefHeight="503.0" prefWidth="500.0">
                      <columns>
-                        <TableColumn prefWidth="75.0" text="C1" />
-                        <TableColumn prefWidth="75.0" text="C2" />
+                        <TableColumn prefWidth="75.0" text="id" fx:id="tcId" />
+                        <TableColumn prefWidth="75.0" text="identity_no" fx:id="tcIdentityNo" />
+                        <TableColumn prefWidth="75.0" text="student_no" fx:id="tcStudentNo" />
+                        <TableColumn prefWidth="75.0" text="name" fx:id="tcName" />
+                        <TableColumn prefWidth="75.0" text="surname" fx:id="tcSurname" />
                      </columns>
                   </TableView>
                   <Label layoutX="510.0" layoutY="11.0" text="Öğrenci İşleri">
@@ -30,16 +33,18 @@
                      </font></Label>
                   <Label layoutX="510.0" layoutY="61.0" text="Bölümü" />
                   <Label layoutX="510.0" layoutY="98.0" text="Öğrenci No" />
-                  <Label layoutX="510.0" layoutY="173.0" text="Soyadı" />
-                  <Label layoutX="510.0" layoutY="136.0" text="Adı" />
-                  <TextField fx:id="txtStudentNo" layoutX="593.0" layoutY="168.0" />
-                  <TextField fx:id="txtName" layoutX="593.0" layoutY="131.0" />
-                  <TextField fx:id="txtSurname" layoutX="592.0" layoutY="93.0" />
+                  <Label layoutX="510.0" layoutY="136.0" text="TC Kimlik" />
+                  <Label layoutX="510.0" layoutY="211.0" text="Soyadı" />
+                  <Label layoutX="510.0" layoutY="174.0" text="Adı" />
+                  <TextField fx:id="txtStudentNo" layoutX="593.0" layoutY="206.0" />
+                  <TextField fx:id="txtIdentityNo" layoutX="593.0" layoutY="131.0" />
+                  <TextField fx:id="txtName" layoutX="593.0" layoutY="169.0" />
+                  <TextField fx:id="txtSurname" layoutX="593.0" layoutY="93.0" />
                   <ComboBox fx:id="cbDepartment" layoutX="592.0" layoutY="56.0" prefWidth="150.0" />
-                  <Button fx:id="btnDelete" layoutX="656.0" layoutY="464.0" mnemonicParsing="false" text="Sil" />
-                  <Button fx:id="btnUpdate" layoutX="579.0" layoutY="464.0" mnemonicParsing="false" text="Güncelle" />
-                  <Button fx:id="btnSave" layoutX="511.0" layoutY="464.0" mnemonicParsing="false" text="Kaydet" />
-                  <Button fx:id="btnClear" layoutX="928.0" layoutY="464.0" mnemonicParsing="false" text="Temizle" onAction="#btnClear"  />
+                  <Button fx:id="btnDelete" layoutX="656.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnDelete" text="Sil" />
+                  <Button fx:id="btnUpdate" layoutX="579.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnUpdate" text="Güncelle" />
+                  <Button fx:id="btnCreate" layoutX="511.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnCreate" text="Kaydet" />
+                  <Button fx:id="btnClear" layoutX="928.0" layoutY="464.0" mnemonicParsing="false" onAction="#btnClear" text="Temizle" />
                </children>
             </AnchorPane>
          </items>
