@@ -1,16 +1,3 @@
-# ************************************************************
-# Sequel Ace SQL dump
-# Version 3008
-#
-# https://sequel-ace.com/
-# https://github.com/Sequel-Ace/Sequel-Ace
-#
-# Host: 127.0.0.1 (MySQL 5.5.5-10.5.8-MariaDB)
-# Database: unitom
-# Generation Time: 2021-01-02 13:41:20 +0000
-# ************************************************************
-
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -99,8 +86,6 @@ VALUES
 
 /*!40000 ALTER TABLE `tbl_students` ENABLE KEYS */;
 UNLOCK TABLES;
-
-
 
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
